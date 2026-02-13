@@ -36,7 +36,7 @@ router.get('/comprasanio', function(req, res, next) {
             console.log(error);
             res.status(500).send({
                 error: error,
-                message: 'Error al realizar la peticion'
+                message: 'Error al realizar la peticion.'
             });
         } else {
             console.log(results);

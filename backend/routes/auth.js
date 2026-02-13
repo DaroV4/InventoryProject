@@ -31,7 +31,7 @@ router.post('/login', function(req, res, next) {
                         message: 'Usuario o contraseña incorrectos'
                     });
                 } else {
-                    // creamos el token
+                    // creamos el token daro
                     const token = jwt.sign({usuario: usuario}, 'secretkey', {expiresIn: '1h'});
                     res.status(200).send({
                         usuario: usuario,
